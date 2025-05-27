@@ -297,7 +297,7 @@ onMounted(async () => {
 	});
 
 	// Load the database file from public folder
-	const response = await fetch('/medical.db');
+	const response = await fetch('/english-arabic-glossary/medical.db');
 	const buffer = await response.arrayBuffer();
 	const database = new SQL.Database(new Uint8Array(buffer));
 
